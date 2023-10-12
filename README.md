@@ -1,2 +1,2 @@
-# layankaushik.github.io
+# Layan Kaushik
 Layan Kaushik Personal Website
