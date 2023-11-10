@@ -48,6 +48,18 @@ nav .main-nav a, .social-nav a {
   transition: color 0.3s;
 }
 
+.social-nav i, .social-nav img {
+  margin-right: 8px;
+  width: 20px; /* For SVG images */
+  height: 20px; /* For SVG images */
+}
+
+.social-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav .main-nav a:hover, .social-nav a:hover {
   color: #017bff;
 }
