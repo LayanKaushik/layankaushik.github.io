@@ -37,6 +37,16 @@ main {
   text-align: left;
 }
 
+.profile-pic {
+  width: 200px; /* or any size you prefer */
+  height: auto;
+  border-radius: 50%; /* if you want a circular profile picture */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* this centers the image in its container */
+}
+
+
 section {
   margin-bottom: 40px;
 }
