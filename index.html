@@ -33,23 +33,21 @@
         <ul>
           <li><a href="https://github.com/LayanKaushik" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/layan-kaushik-9835a512a/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-          <li><a href="mailto:layankaushik13@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
         </ul>
       </nav>
     </header>
     <main class="content">
       <section id="home">
-        <h1>About Me</h1>
+        <h1>Layan Kaushik</h1>
         <div class="about-content">
-          <p class="intro">I am a passionate student pursuing a dual degree in Economics and Computer Science at Duke University. My academic journey combines quantitative analysis with technological innovation, allowing me to explore the intersection of these two dynamic fields.</p>
+          <p class="intro">I am a student pursuing a dual degree in Economics and Computer Science at Duke University. My academic journey combines quantitative analysis with technological innovation, allowing me to explore the intersection of these two dynamic fields.</p>
           
-          <div class="interests">
-            <h2>Research Interests</h2>
+          <div class="highlights">
+            <h2>Recent Highlights</h2>
             <ul>
-              <li>Economic Development</li>
-              <li>Machine Learning Applications</li>
-              <li>Data Analysis</li>
-              <li>Policy Analysis</li>
+              <li>Highlight 1</li>
+              <li>Highlight 2</li>
+              <li>Highlight 3</li>
             </ul>
           </div>
 
@@ -60,6 +58,16 @@
               <p class="degree">B.S. in Economics and Computer Science</p>
               <p class="timeline">Expected Graduation: 2024</p>
             </div>
+          </div>
+
+          <div class="research-interests">
+            <h2>Research Interests</h2>
+            <ul>
+              <li>Economic Development</li>
+              <li>Machine Learning Applications</li>
+              <li>Data Analysis</li>
+              <li>Policy Analysis</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -72,16 +80,13 @@
     const themeToggle = document.getElementById('themeToggle');
     const icon = themeToggle.querySelector('i');
     
-    // Check for saved theme preference or use system preference
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     const currentTheme = localStorage.getItem('theme') || 
                         (prefersDarkScheme.matches ? 'dark' : 'light');
     
-    // Set initial theme
     document.documentElement.setAttribute('data-theme', currentTheme);
     updateIcon(currentTheme);
     
-    // Toggle theme on button click
     themeToggle.addEventListener('click', () => {
       const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
