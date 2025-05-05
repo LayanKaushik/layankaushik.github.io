@@ -3,31 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miscellaneous - Layan Kaushik</title>
+  <meta name="description" content="Layan Kaushik - Miscellaneous interests and activities">
+  <title>Miscellaneous | Layan Kaushik</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/miscellaneous.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="miscellaneous.html">Miscellaneous</a></li>
-        <li><a href="documents/CV.pdf" target="_blank">CV</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="miscellaneous">
-      <h1>Miscellaneous</h1>
-      <p>Content about my miscellaneous projects or interests goes here... (TODO). Please visit my 
-    <a href="https://www.linkedin.com/in/layan-kaushik-9835a512a/" target="_blank">LinkedIn profile</a> to see my current projects and volunteering activities.</p>
-      <!-- Additional content -->
-    </section>
-  </main>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+  <div class="container">
+    <header class="sidebar">
+      <img src="images/profile_pic.jpg" alt="Layan Kaushik" class="profile-pic">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="miscellaneous.html" class="active">Miscellaneous</a></li>
+          <li><a href="documents/CV.pdf" target="_blank">CV</a></li>
+        </ul>
+      </nav>
+      <nav class="social-nav">
+        <ul>
+          <li><a href="https://github.com/LayanKaushik" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/layan-kaushik-9835a512a/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+          <li><a href="mailto:layankaushik13@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section id="miscellaneous">
+        <h1>Miscellaneous</h1>
+        <div class="misc-grid">
+          <div class="misc-section">
+            <h2><i class="fas fa-book"></i> Reading</h2>
+            <div class="misc-content">
+              <div class="misc-card">
+                <h3>Currently Reading</h3>
+                <ul class="misc-list">
+                  <li>Book Title 1</li>
+                  <li>Book Title 2</li>
+                </ul>
+              </div>
+              <div class="misc-card">
+                <h3>Favorite Books</h3>
+                <ul class="misc-list">
+                  <li>Book Title 3</li>
+                  <li>Book Title 4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="misc-section">
+            <h2><i class="fas fa-music"></i> Music</h2>
+            <div class="misc-content">
+              <div class="misc-card">
+                <h3>Currently Listening</h3>
+                <ul class="misc-list">
+                  <li>Artist - Song</li>
+                  <li>Artist - Song</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="misc-section">
+            <h2><i class="fas fa-hiking"></i> Hobbies</h2>
+            <div class="misc-content">
+              <div class="misc-card">
+                <h3>Activities</h3>
+                <ul class="misc-list">
+                  <li>Hobby 1</li>
+                  <li>Hobby 2</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="misc-section">
+            <h2><i class="fas fa-globe-americas"></i> Travel</h2>
+            <div class="misc-content">
+              <div class="misc-card">
+                <h3>Recent Trips</h3>
+                <ul class="misc-list">
+                  <li>Location 1</li>
+                  <li>Location 2</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
   <footer>
     <p>© 2023 Layan Kaushik</p>
   </footer>
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const icon = themeToggle.querySelector('i');
+    
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const currentTheme = localStorage.getItem('theme') || 
+                        (prefersDarkScheme.matches ? 'dark' : 'light');
+    
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateIcon(currentTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateIcon(newTheme);
+    });
+    
+    function updateIcon(theme) {
+      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+  </script>
 </body>
 </html>
