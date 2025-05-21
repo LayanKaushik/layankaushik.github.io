@@ -1,3 +1,17 @@
+/* Prevent flash of unstyled content */
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+}
+
 :root {
   --primary-color: #2563eb;
   --text-color: #1f2937;
@@ -62,8 +76,10 @@ header, footer {
 
 .main-header .main-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
+  padding: 0 1rem;
 }
 
 .main-header .main-nav ul {
@@ -236,21 +252,28 @@ nav .main-nav a:hover, .social-nav a:hover {
 
 /* Dark mode toggle */
 .theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
   background: var(--card-bg);
   border: none;
-  padding: 10px;
+  padding: 8px;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
 }
 
 .theme-toggle:hover {
   transform: scale(1.1);
+  background: var(--primary-color);
+  color: white;
+}
+
+.theme-toggle i {
+  font-size: 1rem;
 }
 
 /* Responsive design */

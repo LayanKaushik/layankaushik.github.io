@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Layan Kaushik - Economics and Computer Science student at Duke University. Personal website showcasing research, projects, and academic work.">
@@ -14,9 +22,6 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-    <i class="fas fa-moon"></i>
-  </button>
   <div id="header-placeholder"></div>
   <div class="container">
     <aside class="sidebar">
@@ -84,29 +89,11 @@
             link.classList.remove('active');
           }
         });
+        // Load and execute header.js
+        const script = document.createElement('script');
+        script.src = 'header.js';
+        document.body.appendChild(script);
       });
-
-    // Theme toggle code
-    const themeToggle = document.getElementById('themeToggle');
-    const icon = themeToggle.querySelector('i');
-    
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const currentTheme = localStorage.getItem('theme') || 
-                        (prefersDarkScheme.matches ? 'dark' : 'light');
-    
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    updateIcon(currentTheme);
-    
-    themeToggle.addEventListener('click', () => {
-      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateIcon(newTheme);
-    });
-    
-    function updateIcon(theme) {
-      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    }
   </script>
 </body>
 </html>

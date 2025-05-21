@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+      }
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Layan Kaushik - Projects showcasing work in Economics and Computer Science">
@@ -13,9 +21,6 @@
   <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-    <i class="fas fa-moon"></i>
-  </button>
   <div id="header-placeholder"></div>
   <div class="container">
     <aside class="sidebar">
@@ -68,6 +73,10 @@
             link.classList.remove('active');
           }
         });
+        // Load and execute header.js
+        const script = document.createElement('script');
+        script.src = 'header.js';
+        document.body.appendChild(script);
       });
 
     const themeToggle = document.getElementById('themeToggle');
