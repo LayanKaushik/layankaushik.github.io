@@ -23,15 +23,7 @@
 <body>
   <div id="header-placeholder"></div>
   <div class="container">
-    <aside class="sidebar">
-      <img src="images/profile_pic.jpg" alt="Layan Kaushik" class="profile-pic">
-      <nav class="social-nav">
-        <ul>
-          <li><a href="https://github.com/LayanKaushik" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/layan-kaushik-9835a512a/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <div id="sidebar-placeholder"></div>
     <main class="content">
       <section id="miscellaneous">
         <h1>Miscellaneous</h1>
@@ -110,26 +102,13 @@
         document.body.appendChild(script);
       });
 
-    const themeToggle = document.getElementById('themeToggle');
-    const icon = themeToggle.querySelector('i');
-    
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    const currentTheme = localStorage.getItem('theme') || 
-                        (prefersDarkScheme.matches ? 'dark' : 'light');
-    
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    updateIcon(currentTheme);
-    
-    themeToggle.addEventListener('click', () => {
-      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      updateIcon(newTheme);
+    // Load sidebar
+    fetch('sidebar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sidebar-placeholder').innerHTML = data;
     });
-    
-    function updateIcon(theme) {
-      icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-    }
+
   </script>
 </body>
 </html>
