@@ -16,18 +16,10 @@
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
     <i class="fas fa-moon"></i>
   </button>
+  <div id="header-placeholder"></div>
   <div class="container">
-    <header class="sidebar">
+    <aside class="sidebar">
       <img src="images/profile_pic.jpg" alt="Layan Kaushik" class="profile-pic">
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="research.html" class="active">Research</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="miscellaneous.html">Miscellaneous</a></li>
-          <li><a href="documents/CV.pdf" target="_blank">CV</a></li>
-        </ul>
-      </nav>
       <nav class="social-nav">
         <ul>
           <li><a href="https://github.com/LayanKaushik" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
@@ -35,7 +27,7 @@
           <li><a href="mailto:layankaushik13@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
         </ul>
       </nav>
-    </header>
+    </aside>
     <main class="content">
       <section id="research">
         <h1>Research</h1>
@@ -75,6 +67,23 @@
     <p>© 2023 Layan Kaushik</p>
   </footer>
   <script>
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+        // Update active link based on current page
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const links = document.querySelectorAll('.main-nav a');
+        links.forEach(link => {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      });
+
     const themeToggle = document.getElementById('themeToggle');
     const icon = themeToggle.querySelector('i');
     
