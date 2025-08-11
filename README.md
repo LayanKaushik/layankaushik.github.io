@@ -10,9 +10,9 @@ I'm a research-focused professional with expertise in causal inference, machine 
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Dark/Light Mode**: Toggle between themes for comfortable viewing
-- **Professional Experience**: Amazon SDE internship and academic research positions
+- **Professional Experience**: Amazon and Mastercard positions
 - **Research Projects**: Computational economics, causal inference, and ML applications
-- **Publications & Work**: Academic research in measurement error, tournament design, and digital health
+- **Publications & Work**: Academic research in measurement error, tournament design, and digital marketing
 - **Technical Skills**: Python, R, C++, AWS, machine learning, and econometric methods
 
 ## Technologies Used
