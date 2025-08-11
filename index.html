@@ -11,59 +11,61 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Layan Kaushik - Economics and Computer Science student at Duke University. Personal website showcasing research, projects, and academic work.">
-  <meta name="keywords" content="Layan Kaushik, Duke University, Economics, Computer Science, Research, Projects">
-  <meta name="author" content="Layan Kaushik">
-  <title>Layan Kaushik | Economics & Computer Science @ Duke University</title>
+  <meta name="description" content="Layan Kaushik - Economist & Data Scientist at Amazon, bridging economic research and scalable data science solutions">
+  <title>Layan Kaushik</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div id="header-placeholder"></div>
   <div class="container">
-    <div id="sidebar-placeholder"></div>
     <main class="content">
-      <section id="home">
-        <h1>Layan Kaushik</h1>
-        <div class="about-content">
-          <p class="intro">I am a student pursuing a dual degree in Economics and Computer Science at Duke University. My academic journey combines quantitative analysis with technological innovation, allowing me to explore the intersection of these two dynamic fields.</p>
-          
-          <div class="highlights">
-            <h2>Recent Highlights</h2>
-            <ul>
-              <li>Highlight 1</li>
-              <li>Highlight 2</li>
-              <li>Highlight 3</li>
-            </ul>
+      <div class="home-container">
+        <div class="home-left">
+          <div class="name-title">
+            <h1>Layan Kaushik</h1>
+            <p class="title">Economist & Data Scientist</p>
+            <p class="subtitle">Bridging Economic Research and Scalable Data Science Solutions</p>
           </div>
 
-          <div class="education">
-            <h2>Education</h2>
-            <div class="education-item">
-              <h3>Duke University</h3>
-              <p class="degree">B.S. in Economics and Computer Science</p>
-              <p class="timeline">Expected Graduation: 2024</p>
-            </div>
-          </div>
-
-          <div class="research-interests">
-            <h2>Research Interests</h2>
-            <ul>
-              <li>Economic Development</li>
-              <li>Machine Learning Applications</li>
-              <li>Data Analysis</li>
-              <li>Policy Analysis</li>
-            </ul>
+          <div class="about-content">
+            <p>I am a technical economist and data scientist with machine learning engineering expertise, passionate about bridging rigorous economic research with cutting-edge data science applications. Currently serving as an Economist at Amazon's Alexa Economics and Decision Sciences team, I develop production-ready ML systems while conducting advanced economic research on digital markets and consumer behavior.</p>
+            
+            <p>My unique background combines deep theoretical training from Duke University's Economics and Computation program with hands-on experience building scalable machine learning solutions. Working closely with <a href="https://mingyu-chen.com/" target="_blank" class="name-link">Mingyu Chen</a> (Senior Economist) and <a href="https://sites.google.com/view/alex-mas/home" target="_blank" class="name-link">Professor Alexandre Mas</a> from Princeton University, I tackle complex problems at the intersection of economics, technology, and policy—translating economic theory into actionable insights through advanced computational methods.</p>
+            
+            <p><strong>Research Focus</strong>: Causal inference, mechanism design, and computational economics with applications to digital platforms and policy evaluation.</p>
+            
+            <p><strong>Technical Expertise</strong>: Production ML systems, advanced econometrics, large-scale data processing, and end-to-end model deployment.</p>
           </div>
         </div>
-      </section>
+
+        <div class="home-right">
+          <img src="images/profile_pic.jpg" alt="Layan Kaushik" class="profile-image">
+          
+          <div class="professional-experience">
+            <h2>Professional Experience</h2>
+            <div class="paper-item">
+              <div class="paper-title">Economist | Amazon</div>
+              <div class="paper-authors">Alexa Economics and Decision Sciences Team | Seattle, WA</div>
+              <div class="paper-journal">June 2024 - Present</div>
+              <div class="paper-abstract">Collaborating closely with <a href="https://mingyu-chen.com/" target="_blank" class="name-link">Mingyu Chen</a> (Senior Economist) and <a href="https://sites.google.com/view/alex-mas/home" target="_blank" class="name-link">Professor Alexandre Mas</a> (Princeton University) on cutting-edge research at the intersection of digital economics and machine learning. Developing production-ready ML systems for survey analysis and customer behavior modeling while conducting causal inference research to evaluate product impacts and inform strategic decision-making across Alexa's ecosystem.</div>
+              <div class="paper-tech">Technical Stack: Python, SQL, AWS (RDS, S3, EC2), Machine Learning, QuickSight, Advanced Econometrics</div>
+            </div>
+            
+            <div class="paper-item">
+              <div class="paper-title">Data Scientist | Mastercard</div>
+              <div class="paper-authors">Geographic Insights Team | Gurugram, India</div>
+              <div class="paper-journal">August 2020 - June 2022</div>
+              <div class="paper-abstract">Enhanced geospatial analytics capabilities through custom ML algorithms and automated data engineering pipelines, achieving 80% improvement in operational efficiency while building scalable solutions for enterprise clients analyzing millions of daily transactions.</div>
+              <div class="paper-tech">Technical Stack: Python, SQL, Hadoop, Spark, PySpark, Hive, Geospatial Analysis, ETL Pipelines</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
   <footer>
-    <p>© 2023 Layan Kaushik</p>
+    <p>© 2024 Layan Kaushik</p>
   </footer>
   <script>
     // Load header
@@ -85,15 +87,10 @@
         const script = document.createElement('script');
         script.src = 'header.js';
         document.body.appendChild(script);
+      })
+      .catch(error => {
+        console.error('Error loading header:', error);
       });
-
-    // Load sidebar
-    fetch('sidebar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('sidebar-placeholder').innerHTML = data;
-    });
-
   </script>
 </body>
 </html>

@@ -11,56 +11,35 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Layan Kaushik - Research in Economics and Computer Science">
+  <meta name="description" content="Layan Kaushik - Research Publications">
   <title>Research | Layan Kaushik</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/research.css">
 </head>
 <body>
   <div id="header-placeholder"></div>
   <div class="container">
-    <div id="sidebar-placeholder"></div>
     <main class="content">
-      <section id="research">
-        <h1>Research</h1>
-        <div class="research-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="economics">Economics</button>
-          <button class="filter-btn" data-filter="cs">Computer Science</button>
-          <button class="filter-btn" data-filter="interdisciplinary">Interdisciplinary</button>
-        </div>
-        <div class="research-grid">
-          <div class="research-card" data-category="economics">
-            <div class="research-header">
-              <h3>Research Paper Title</h3>
-              <span class="research-date">2023</span>
-            </div>
-            <div class="research-authors">
-              <span class="author">Layan Kaushik</span>
-              <span class="co-authors">with Collaborator 1, Collaborator 2</span>
-            </div>
-            <p class="research-status">Working Paper</p>
-            <p class="research-abstract">Abstract of the research paper goes here. This should be a brief summary of the research objectives, methodology, and key findings.</p>
-            <div class="research-tags">
-              <span class="tag">Economics</span>
-              <span class="tag">Development</span>
-            </div>
-            <div class="research-links">
-              <a href="#" class="research-link"><i class="fas fa-file-pdf"></i> PDF</a>
-              <a href="#" class="research-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-            </div>
+      <div class="name-title">
+        <h1>Publications</h1>
+      </div>
+
+      <div class="research-grid">
+        <div class="paper-item">
+          <div class="paper-title">"Refining FEMA's NFIP V2 Open Flood Insurance Claims Dataset: Comprehensive Enhancements through Data Augmentation, Feature Engineering, Anomaly Detection and Multiple Imputation"</div>
+          <div class="paper-authors">Layan Kaushik</div>
+          <div class="paper-journal">American Geophysical Union (AGU) Conference 2023</div>
+          <div class="paper-abstract">Enhanced analysis of millions of flood insurance claims through advanced statistical techniques, geospatial modeling, and machine learning algorithms. Developed sophisticated outlier detection methods and automated ETL pipelines that inform federal flood insurance pricing models and policy decisions.</div>
+          <div class="paper-links">
+            <a href="https://agu23.ipostersessions.com/Default.aspx?s=5D-2E-DC-C5-1A-81-51-79-82-C6-76-67-96-4A-82-D2" class="research-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Publication</a>
           </div>
-          <!-- More research cards can be added here -->
         </div>
-      </section>
+      </div>
     </main>
   </div>
   <footer>
-    <p>© 2023 Layan Kaushik</p>
+    <p>© 2024 Layan Kaushik</p>
   </footer>
   <script>
     // Load header
@@ -82,37 +61,11 @@
         const script = document.createElement('script');
         script.src = 'header.js';
         document.body.appendChild(script);
+      })
+      .catch(error => {
+        console.error('Error loading header:', error);
       });
-
-    // Load sidebar
-    fetch('sidebar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('sidebar-placeholder').innerHTML = data;
-    });
-
-    // Research filtering functionality
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const researchCards = document.querySelectorAll('.research-card');
-
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        // Add active class to clicked button
-        button.classList.add('active');
-        
-        const filter = button.getAttribute('data-filter');
-        
-        researchCards.forEach(card => {
-          if (filter === 'all' || card.getAttribute('data-category') === filter) {
-            card.style.display = 'block';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      });
-    });
   </script>
 </body>
 </html>
+
