@@ -5,21 +5,21 @@
 }
 
 .misc-section {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .misc-section h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #2d3748;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
 .misc-section h2 i {
-  color: #0066cc;
+  color: #2b6cb0;
   font-size: 1.2rem;
 }
 
@@ -30,22 +30,29 @@
 .misc-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .misc-item:last-child {
   border-bottom: none;
 }
 
+/* Remove underline from research interests items specifically */
+.research-interests .misc-item {
+  border-bottom: none;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
 .misc-item h3 {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #2d3748;
 }
 
 .misc-details {
-  color: #666;
+  color: #718096;
   font-size: 0.95rem;
   margin-bottom: 1rem;
   font-style: italic;
@@ -56,9 +63,10 @@
 }
 
 .misc-description {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  color: #2d3748;
+  font-size: 0.9rem;
 }
 
 .misc-list {
@@ -68,10 +76,11 @@
 }
 
 .misc-list li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
   padding-left: 0;
-  color: #333;
+  color: #2d3748;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
 .misc-list li:before {
@@ -85,7 +94,7 @@
 }
 
 .paper-links a {
-  color: #0066cc;
+  color: #2b6cb0;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -109,13 +118,13 @@
 }
 
 .contact-details .contact-item i {
-  color: #0066cc;
+  color: #2b6cb0;
   width: 20px;
   text-align: center;
 }
 
 .contact-details .contact-item a {
-  color: #0066cc;
+  color: #2b6cb0;
   text-decoration: none;
 }
 
@@ -125,53 +134,53 @@
 
 /* Dark mode */
 [data-theme="dark"] .misc-section h2 {
-  color: #e0e0e0;
+  color: #f0f6fc;
 }
 
 [data-theme="dark"] .misc-section h2 i {
-  color: #66b3ff;
+  color: #58a6ff;
 }
 
 [data-theme="dark"] .misc-item h3 {
-  color: #e0e0e0;
+  color: #f0f6fc;
 }
 
 [data-theme="dark"] .misc-details {
-  color: #aaa;
+  color: #8b949e;
 }
 
 [data-theme="dark"] .misc-description {
-  color: #e0e0e0;
+  color: #c9d1d9;
 }
 
 [data-theme="dark"] .misc-list li {
-  color: #e0e0e0;
+  color: #c9d1d9;
 }
 
 [data-theme="dark"] .misc-item {
-  border-bottom-color: #444;
+  border-bottom-color: #30363d;
 }
 
 [data-theme="dark"] .paper-links a {
-  color: #66b3ff;
+  color: #58a6ff;
 }
 
 /* Dark mode for contact details */
 [data-theme="dark"] .contact-details .contact-item i {
-  color: #66b3ff;
+  color: #58a6ff;
 }
 
 [data-theme="dark"] .contact-details .contact-item a {
-  color: #66b3ff;
+  color: #58a6ff;
 }
 
 [data-theme="dark"] .paper-tech {
-  color: #aaa;
-  border-top-color: #444;
+  color: #8b949e;
+  border-top-color: #30363d;
 }
 
 [data-theme="dark"] .paper-abstract {
-  color: #e0e0e0;
+  color: #c9d1d9;
 }
 
 /* Responsive adjustments */
