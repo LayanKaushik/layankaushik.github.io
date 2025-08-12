@@ -19,31 +19,31 @@ body {
   background-color: #ffffff;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem 2.5rem;
-  line-height: 1.25;
+  padding: 3rem 4rem;
+  line-height: 1.5;
   font-weight: 400;
   font-size: 14px;
 }
 
 /* Header */
 .main-header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 4rem;
   border-bottom: 1px solid #e2e8f0;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   position: sticky;
   top: 0;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  margin-top: -2rem;
-  padding-top: 1rem;
+  margin-top: -3rem;
+  padding-top: 1.5rem;
 }
 
 .main-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .nav-brand .brand-link {
@@ -72,14 +72,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0;
   padding: 0;
 }
@@ -155,8 +155,8 @@ body {
 .name-title-section {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .name-title {
@@ -191,9 +191,9 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 3.5rem;
   font-weight: 600;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   color: #1a202c;
-  line-height: 0.95;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -211,8 +211,8 @@ body {
   font-size: 1.1rem;
   color: #3a3a3a;
   font-style: italic;
-  margin-bottom: 1.8rem;
-  line-height: 1.3;
+  margin-bottom: 3rem;
+  line-height: 1.6;
   font-weight: 300;
   font-family: 'Playfair Display', serif;
   opacity: 0.95;
@@ -220,14 +220,14 @@ body {
 
 /* About section */
 .about-content {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .about-content p {
   font-size: 1rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.25rem;
   color: #2d3748;
-  line-height: 1.25;
+  line-height: 1.5;
   text-align: left;
 }
 
@@ -249,7 +249,7 @@ body {
 
 /* Professional experience */
 .professional-experience {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   padding: 0;
   background: transparent;
   border-radius: 0;
@@ -260,7 +260,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
   color: #1a202c;
   text-align: center;
   position: relative;
@@ -290,8 +290,8 @@ body {
 
 /* Paper/Research items (general styling for content blocks) */
 .paper-item {
-  margin-bottom: 1.2rem;
-  padding: 0.6rem 0;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
   background: transparent;
   border-radius: 0;
   border: none;
@@ -315,9 +315,9 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1.35rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   color: #1a202c;
-  line-height: 1.1;
+  line-height: 1.3;
   letter-spacing: -0.01em;
 }
 
@@ -341,8 +341,8 @@ body {
 
 .paper-abstract {
   color: #2d3748;
-  line-height: 1.25;
-  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
   text-align: left;
 }
@@ -351,13 +351,13 @@ body {
   color: #4a5568;
   font-size: 0.85rem;
   font-style: normal;
-  margin-top: 0.6rem;
-  padding-top: 0.6rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   border-top: 1px solid #e2e8f0;
-  line-height: 1.3;
+  line-height: 1.6;
   font-weight: 400;
   background-color: #f8fafc;
-  padding: 0.6rem;
+  padding: 1rem;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
   font-family: 'JetBrains Mono', monospace;
@@ -366,8 +366,8 @@ body {
 
 .paper-links {
   display: flex;
-  gap: 0.6rem;
-  margin-top: 0.6rem;
+  gap: 1rem;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
 
