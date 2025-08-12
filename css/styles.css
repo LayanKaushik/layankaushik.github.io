@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -22,7 +22,7 @@ body {
   padding: 2rem 2.5rem;
   line-height: 1.25;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 /* Header */
@@ -59,7 +59,7 @@ body {
 }
 
 .nav-brand .brand-name {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 600;
   color: #1a202c;
   margin: 0;
@@ -88,7 +88,7 @@ body {
   text-decoration: none;
   color: #4a5568;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -189,7 +189,7 @@ body {
 /* Name and title */
 .name-title h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 0.6rem;
   color: #1a202c;
@@ -199,7 +199,7 @@ body {
 }
 
 .name-title .title {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #2b6cb0;
   margin-bottom: 0.75rem;
   font-weight: 500;
@@ -208,7 +208,7 @@ body {
 }
 
 .name-title .subtitle {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #3a3a3a;
   font-style: italic;
   margin-bottom: 1.8rem;
@@ -224,7 +224,7 @@ body {
 }
 
 .about-content p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.8rem;
   color: #2d3748;
   line-height: 1.25;
@@ -258,7 +258,7 @@ body {
 
 .professional-experience h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1.2rem;
   color: #1a202c;
@@ -314,7 +314,7 @@ body {
 .paper-title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin-bottom: 0.6rem;
   color: #1a202c;
   line-height: 1.1;
@@ -323,7 +323,7 @@ body {
 
 .paper-authors {
   color: #2b6cb0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
@@ -343,7 +343,7 @@ body {
   color: #2d3748;
   line-height: 1.25;
   margin-bottom: 0.6rem;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   text-align: left;
 }
 
