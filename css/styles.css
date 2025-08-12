@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.6;
 }
 
@@ -19,31 +19,31 @@ body {
   background-color: #ffffff;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 3rem 4rem;
-  line-height: 1.5;
+  padding: 2rem 2.5rem;
+  line-height: 1.25;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 /* Header */
 .main-header {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   border-bottom: 1px solid #e2e8f0;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   position: sticky;
   top: 0;
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  margin-top: -3rem;
-  padding-top: 1.5rem;
+  margin-top: -2rem;
+  padding-top: 1rem;
 }
 
 .main-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .nav-brand .brand-link {
@@ -59,7 +59,7 @@ body {
 }
 
 .nav-brand .brand-name {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #1a202c;
   margin: 0;
@@ -72,14 +72,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -88,7 +88,7 @@ body {
   text-decoration: none;
   color: #4a5568;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -155,8 +155,8 @@ body {
 .name-title-section {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .name-title {
@@ -189,17 +189,17 @@ body {
 /* Name and title */
 .name-title h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
   color: #1a202c;
-  line-height: 1.1;
+  line-height: 0.95;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .name-title .title {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #2b6cb0;
   margin-bottom: 0.75rem;
   font-weight: 500;
@@ -208,11 +208,11 @@ body {
 }
 
 .name-title .subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #3a3a3a;
   font-style: italic;
-  margin-bottom: 3rem;
-  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  line-height: 1.3;
   font-weight: 300;
   font-family: 'Playfair Display', serif;
   opacity: 0.95;
@@ -220,14 +220,14 @@ body {
 
 /* About section */
 .about-content {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about-content p {
-  font-size: 1rem;
-  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
   color: #2d3748;
-  line-height: 1.5;
+  line-height: 1.25;
   text-align: left;
 }
 
@@ -249,7 +249,7 @@ body {
 
 /* Professional experience */
 .professional-experience {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   padding: 0;
   background: transparent;
   border-radius: 0;
@@ -258,9 +258,9 @@ body {
 
 .professional-experience h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   color: #1a202c;
   text-align: center;
   position: relative;
@@ -290,8 +290,8 @@ body {
 
 /* Paper/Research items (general styling for content blocks) */
 .paper-item {
-  margin-bottom: 2rem;
-  padding: 1rem 0;
+  margin-bottom: 1.2rem;
+  padding: 0.6rem 0;
   background: transparent;
   border-radius: 0;
   border: none;
@@ -314,16 +314,16 @@ body {
 .paper-title {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 1.35rem;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.6rem;
   color: #1a202c;
-  line-height: 1.3;
+  line-height: 1.1;
   letter-spacing: -0.01em;
 }
 
 .paper-authors {
   color: #2b6cb0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 0.5rem;
   font-weight: 500;
   font-family: 'Inter', sans-serif;
@@ -341,9 +341,9 @@ body {
 
 .paper-abstract {
   color: #2d3748;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  line-height: 1.25;
+  margin-bottom: 0.6rem;
+  font-size: 0.75rem;
   text-align: left;
 }
 
@@ -351,13 +351,13 @@ body {
   color: #4a5568;
   font-size: 0.85rem;
   font-style: normal;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 0.6rem;
+  padding-top: 0.6rem;
   border-top: 1px solid #e2e8f0;
-  line-height: 1.6;
+  line-height: 1.3;
   font-weight: 400;
   background-color: #f8fafc;
-  padding: 1rem;
+  padding: 0.6rem;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
   font-family: 'JetBrains Mono', monospace;
@@ -366,8 +366,8 @@ body {
 
 .paper-links {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
   flex-wrap: wrap;
 }
 
