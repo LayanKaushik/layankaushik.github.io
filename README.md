@@ -4,7 +4,7 @@ Personal website showcasing my academic research, professional experience, and a
 
 ## About
 
-I'm a research-focused professional with expertise in causal inference, machine learning, and big data analytics. Currently pursuing advanced research at the intersection of economics and computer science.
+I'm a research-focused professional with expertise in causal inference, machine learning, and big data analytics. Currently pursuing industrial research at the intersection of economics and computer science.
 
 ## Website Features
 
